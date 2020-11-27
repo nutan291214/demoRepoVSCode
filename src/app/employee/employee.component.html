@@ -1,0 +1,27 @@
+<h2>Emp Details</h2>
+<div>
+    EId:<input type="text"/><br/><br/>
+    Ename:<input type="text"/><br/><br/>
+    Salary:<input type="text"/><br/><br/>
+    Department:<input type="text"/><br/><br/>
+    <button>Add</button>
+</div>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Eid</th>
+        <th>Ename</th>
+        <th>salary</th>
+        <th>isfirst</th>
+        <th>islast</th>
+    </tr>
+    <tr *ngFor='let e of employees; let i=index;let isfirst=first;let islast= last;let iseven=even;let isodd=odd;'>
+       <td>{{i+1}}</td>
+       <td>{{e.eid}}</td>
+       <td>{{e.ename}}</td>
+       <td>{{e.salary}}</td>
+       <td>{{isfirst}}</td>
+       <td>{{islast}}</td>
+    </tr>
+</table>

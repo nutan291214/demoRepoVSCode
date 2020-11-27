@@ -1,0 +1,23 @@
+<p>the-if-component works!</p>
+<div>
+    <h1 *ngIf='status'>{{appTitle}} to the ngIf demo</h1>
+
+
+</div>
+<div *ngIf="flag; then thenBlock else elseBlock">
+</div>
+<ng-template #thenBlock>
+  <div>Then block:hello world!!</div>
+</ng-template>
+<ng-template #elseBlock>
+    <div>ElseBlock: hello world....</div>
+</ng-template>
+<h2>ngFor</h2>
+<table>
+    <tr *ngFor='let i of arr'>
+        <td>{{i}}</td>
+    </tr>
+</table>
+<ul>
+    <li *ngFor='let i of arrString'>{{i}}</li>
+</ul>

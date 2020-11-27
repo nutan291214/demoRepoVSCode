@@ -1,0 +1,24 @@
+<p>two-way-data-binding works!</p>
+<div>
+
+
+<h2>one way databinding</h2>
+name:<input [ngModel]="ename"/><br/>
+name: {{ename}}<br>
+
+<input [value]="ename" /><br>
+name: {{ename}} <br>
+
+<h3>two way data binding</h3>
+name:<input type="text" [(ngModel)]="ename" /><br/>
+name: {{ename}}<br/>
+
+
+
+<button (click)="showmsg()">Greet</button>
+{{msg}}
+</div>
+
+<div>
+
+</div>
